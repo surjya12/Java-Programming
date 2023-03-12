@@ -2,6 +2,10 @@ package ArrayPragram;
 
 import java.util.Scanner;
 
+//Write a program to INSERT A ELEMENT INTO EXISTING ARR Write a program to INSERT A ELEMENT INTO EXISTING ARRAY in a specified AY in a specified
+//position?
+
+
 public class InsertElement {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
@@ -18,13 +22,17 @@ public class InsertElement {
 		System.out.println("enter the element ");
 		int ele=s.nextInt();
 		
-		for(int i=arr.length;i>=index-1;i--) {
+		for(int i=0;i<index;i++) {
+			arr1[i]=arr[i];
+		}
+		arr1[index]=ele;
+		for(int i=index+1;i<arr1.length;i++) {
 			arr1[i]=arr[i-1];
 		}
-		arr1[index-1]=ele;
-		for(int i=0;i<arr.length;i++) {
-			System.out.print(arr1[i]+" ");
+		for(int i=0;i<arr1.length;i++) {
+			System.out.print(arr1[i]);
 		}
+		
 	}
 
 }
