@@ -7,12 +7,14 @@ public class ConvertFirstCharCapital {
 	Scanner s=new Scanner(System.in);
 	System.out.println("enter the sentence");
 	String st=s.nextLine();
+	intcap(st);
 	}
-	public static String intcap(String st) {
-		char []ch=st.toCharArray();
-		for(int i=0;i<ch.length;i++) {
-			if(i== && ch[i!=''])
-		}
+	public static void intcap(String st) {
+		char[]ch=st.toCharArray();
+	for(int i=0;i<ch.length;i++) {
+		if((i==0 && ch[i]!=' ') || (i>0&&ch[i]!=' ' && ch[i-1]==' '))
+			if()
+	}
 	}
 	
 
